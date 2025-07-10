@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti Cloths - Premium Ethnic Wear for Mothers</title>
+    <style>
+        :root {
+            --primary: #ff6b6b;
+            --secondary: #5f27cd;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .section {
+            padding: 5rem 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Jyoti Cloths</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Ethnic Wear for Mothers</h1>
+            <p>Handcrafted with love and tradition</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+    
+    <section class="section" id="about">
+        <h2 class="section-title">Our Story</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>Jyoti Cloths was born from a daughter's love for her mother, bringing together traditional craftsmanship with contemporary designs. Each piece is thoughtfully curated to celebrate the grace and elegance of motherhood.</p>
+        </div>
+    </section>
+    
+    <section class="section" id="products">
+        <h2 class="section-title">Our Collections</h2>
+        <div class="products">
+            <div class="product-card" onclick="sendWhatsAppMessage('Signature Sarees', '₹1,299 - ₹3,999', 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">
+                <img src="images\scrnli_3jaeaoxwh3I22Y.png" alt="Saree Collection" class="product-img">
+                <div class="product-info">
+                    <h3>Women Navy Blue & White Printed Flared Palazzos</h3>
+                    <p>₹1299</p>
+                    <div class="btn btn-primary">Enquire Now</div>
+                </div>
+            </div>
+            
+            <div class="product-card" onclick="sendWhatsAppMessage('Salwar Kameez', '₹1,599 - ₹4,499', 'https://images.unsplash.com/photo-1539533018447-63fcce2678e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">
+                <img src="images\scrnli_4FxU4uXt128W71.png" alt="Salwar Kameez" class="product-img">
+                <div class="product-info">
+                    <h3>saree</h3>
+                    <p>₹2999</p>
+                    <div class="btn btn-primary">Enquire Now</div>
+                </div>
+            </div>
+            
+            <div class="product-card" onclick="sendWhatsAppMessage('Designer Kurtis', '₹799 - ₹2,499', 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">
+                <img src="images\scrnli_OBGUrw8hd3Dk9R.png" alt="Kurtis" class="product-img">
+                <div class="product-info">
+                    <h3>Women Blue Pure Cotton Kurta Sets</h3>
+                    <p>₹1599</p>
+                    <div class="btn btn-primary">Enquire Now</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Jyoti Cloths</h2>
+        <p>Premium Ethnic Wear for Mothers</p>
+        <div style="margin: 1.5rem 0;">
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: white; margin: 0 0.5rem;"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919876543210" style="color: white; margin: 0 0.5rem;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>© 2023 Jyoti Cloths. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // WhatsApp Integration Function
+        function sendWhatsAppMessage(productName, price, imageUrl) {
+            // Replace with your WhatsApp number (with country code, remove +)
+            const whatsappNumber = "918619398949";
+            
+            // Customize your message
+            const message = `Hello Jyoti Cloths!%0A%0AI'm interested in this product:%0A%0A*${productName}*%0A*Price:* ${price}%0A%0ACan you share more details?%0A%0AProduct Image: ${imageUrl}`;
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        }
+        
+        // Make entire product card clickable
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.cursor = 'pointer';
+        });
+    </script>
+</body>
+</html>
